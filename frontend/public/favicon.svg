@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <rect width="128" height="128" rx="28" fill="#0c0c0c"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="none" stroke="#F5C518" stroke-width="2" opacity="0.4"/>
+  <text x="64" y="90" font-family="'Montserrat', -apple-system, sans-serif" font-weight="900" font-size="78" fill="#F5C518" text-anchor="middle" letter-spacing="-2">E</text>
+  <circle cx="98" cy="88" r="7" fill="#ffffff"/>
+</svg>

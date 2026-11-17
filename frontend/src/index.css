@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #e5e2e1;
+  --text-muted: rgba(229, 226, 225, 0.5);
+  --accent-color: #F5C518;
+  --accent-hover: #ffd700;
+  --accent-rgb: 245, 197, 24;
+  --surface-color: #111111;
+  --surface-border: rgba(245, 197, 24, 0.1);
+  --nav-bg: rgba(10, 10, 10, 0.85);
+  --card-bg: #141414;
+  --border-muted: rgba(255, 255, 255, 0.06);
+  --white-or-black: #ffffff;
+  --black-or-white: #0a0a0a;
+  --gold-tint: rgba(245, 197, 24, 0.1);
+  --gold-tint-deep: rgba(245, 197, 24, 0.25);
+  --gold-text: #F5C518;
+  --nav-link-color: rgba(229, 226, 225, 0.5);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: color 0.15s ease-out;
+}
+
+/* Light theme overrides for hardcoded styling values */
+.theme-light [style*="color: #e5e2e1"],
+.theme-light [style*="color:#e5e2e1"],
+.theme-light [style*="color: '#e5e2e1'"],
+.theme-light [style*="color:\"#e5e2e1\""],
+.theme-light [style*="color: rgb(229, 226, 225)"] {
+  color: var(--text-color) !important;
+}
+
+.theme-light [style*="color: #fff"],
+.theme-light [style*="color:#fff"],
+.theme-light [style*="color: '#fff'"],
+.theme-light [style*="color:\"#fff\""],
+.theme-light [style*="color: rgb(255, 255, 255)"] {
+  color: var(--white-or-black) !important;
+}
+
+.theme-light [style*="rgba(229,226,225"],
+.theme-light [style*="rgba(229, 226, 225"] {
+  color: var(--text-muted) !important;
+}
+
+.theme-light [style*="background: #141414"],
+.theme-light [style*="background:#141414"],
+.theme-light [style*="background-color: #141414"] {
+  background-color: var(--card-bg) !important;
+}
+
+.theme-light [style*="background: #111111"],
+.theme-light [style*="background:#111111"],
+.theme-light [style*="background-color: #111111"] {
+  background-color: var(--surface-color) !important;
+}
+
+.theme-light [style*="border-color: rgba(229,226,225,0.15)"],
+.theme-light [style*="border-color:rgba(229,226,225,0.15)"],
+.theme-light [style*="border: 1px solid rgba(229,226,225,0.15)"] {
+  border-color: var(--border-muted) !important;
+}
+
+.theme-light [style*="border-color: rgba(229,226,225,0.2)"],
+.theme-light [style*="border-color:rgba(229,226,225,0.2)"],
+.theme-light [style*="border: 2px solid rgba(229,226,225,0.2)"] {
+  border-color: var(--border-muted) !important;
+}
